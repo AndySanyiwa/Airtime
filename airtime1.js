@@ -15,7 +15,7 @@ const options = {
     }]
 };
 
-const sendCode() {
+function sendCode() {
     airtime.send(options)
         .then( response => {
             console.log(response);
