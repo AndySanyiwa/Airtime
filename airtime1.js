@@ -18,9 +18,9 @@ const options = {
 function sendCode() {
     airtime.send(options)
         .then( response => {
-            console.log(response);
+            document.getElementById('outputA').innerHTML = response;
         })
         .catch( error => {
-            console.log(error);
+            document.getElementById('outputA').innerHTML = error;
         });
 } 
