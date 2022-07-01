@@ -9,8 +9,8 @@ const airtime = AfricasTalking.AIRTIME
 
 const options = {
     recipients: [{
-        phoneNumber: document.getElementById('num').value,
-        currencyCode: `+${document.getElementById('currency').value}`,
+        phoneNumber: `+${document.getElementById('num').value}`,
+        currencyCode: document.getElementById('currency').value,
         amount: document.getElementById('amount').value
     }]
 };
